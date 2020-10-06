@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        th
+        {border-style: solid;}
+        table
+        {border-style: inset;}
+    </style>
+    <script>
+        function textTo(elem, color){
+            document.getElementById(elem).style.color = color ;
+        }
+    
+        function backTo(elem, color){
+            document.getElementById(elem).style.backgroundColor = color ;
+        }
+    
+
+    </script>
+
+
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1 id = "myText">I can change my color</h1>
+<table style="width:10%">
+    <tr>
+      <th style="color: red;" onclick="textTo('myText', 'red')">red</th>
+      <th style="color: blue;"onclick="textTo('myText', 'blue')">blue</th> 
+      <th style="color: green;" onclick="textTo('myText', 'green')">green</th>
+    </tr>
+    <tr>
+  </table>
+  <h1 id = "text">I can change my backgound color</h1>
+  <table style="width:10%">
+      <tr>
+        <th style="color: red;" onclick="backTo('text', 'red')">red</th>
+        <th style="color: blue;"onclick="backTo('text', 'blue')">blue</th> 
+        <th style="color: green;" onclick="backTo('text', 'green')">green</th>
+      </tr>
+      <tr>
+    </table>
+</table>
+
+<h1 id = "text2">I can change my backgound color</h1>
+<table style="width:10%">
+    <tr>
+      <th style="color: red;" onclick="backTo('text2', 'red')">red</th>
+      <th style="color: blue;"onclick="backTo('text2', 'blue')">blue</th> 
+      <th style="color: green;" onclick="backTo('text2', 'green')">green</th>
+    </tr>
+    
+    <tr>
+      <th style="color: red;" onclick="textTo('text2', 'red')">red</th>
+      <th style="color: blue;"onclick="textTo('text2', 'blue')">blue</th> 
+      <th style="color: green;" onclick="textTo('text2', 'green')">green</th>
+    </tr>
+</table>
+
+</body>
+</html>
